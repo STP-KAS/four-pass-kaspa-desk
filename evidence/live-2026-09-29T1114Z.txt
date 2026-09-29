@@ -1,0 +1,32 @@
+Live fetch, 2026-09-29T11:14:04Z, from the Windows desk. No kaspad started. No seed opened. No comment posted.
+
+GET https://api-tn10.kaspa.org/info/health?nc=<unix>
+HTTP 503  cf-cache-status: MISS
+{"kaspadServers":[{"kaspadHost":"wrpc","isUtxoIndexed":true,"isSynced":true,"serverVersion":"2.0.0","p2pId":"28916cd5ee620a54af87c5944f385eaf9bed586dcddffe57949484765f10a281","blueScore":571974900}],"database":{"isSynced":false,"blueScore":571974867,"blueScoreDiff":27,"acceptedTxBlockTime":1790366138262,"acceptedTxBlockTimeDiff":314306.7379999161}}
+
+GET https://api-tn10.kaspa.org/info/health
+HTTP 200  cf-cache-status: STALE
+{"kaspadServers":[{"kaspadHost":"wrpc","serverVersion":"2.0.1","isUtxoIndexed":true,"isSynced":true,"p2pId":"965d43fea52bf52915bfee424a155282f40fba60316d97a6c5c07276d094a3d3","blueScore":568825293}],"database":{"isSynced":true,"blueScore":568825255,"blueScoreDiff":25,"acceptedTxBlockTime":1790365505207,"acceptedTxBlockTimeDiff":227}}
+
+GET https://api-tn10.kaspa.org/info/blockdag
+HTTP 200  networkName kaspa-testnet-10  virtualDaaScore 583495623
+
+GET https://api.kaspa.org/info/blockdag  User-Agent Mozilla
+networkName kaspa-mainnet  virtualDaaScore 552601692
+
+GET https://api.kaspa.org/info/coinsupply
+circulatingSupply 2772802831806688027 sompi  (= 27,728,028,318.06688027 KAS)
+
+GET https://api.kaspa.org/info/blockreward
+blockreward 2.18267645
+
+GET https://sixpack.wtf/  HTTP 200  body 3643 bytes
+GET https://stp-kas.github.io/grok-heavy-showcase/  HTTP 200  body 4763 bytes
+
+gh: kaspanet/rusty-kaspa latest release v2.1.0 published 2026-09-22T13:55:36Z
+gh: kaspanet/silverscript latest release v1.0.0
+gh: argent-lang/argent tags length 0
+gh: kaspanet/kccs kcc-0000.md Status: Final
+gh: kaspanet/vprogs pull 165  open, draft=false, merged=false, head b5c48193c03762112a78bcf0f00cc865bc9b765f, updated 2026-09-28T13:50:38Z
+
+STP-KAS account at fetch: 74 public, 7 private. Login STP-KAS. Bio: Experimental only.

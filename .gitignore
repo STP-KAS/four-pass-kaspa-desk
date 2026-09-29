@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.exe
+node_modules/
+target/
+.env
+.env.*
+secrets/
+*.pem
+wallet.txt
