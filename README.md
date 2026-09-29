@@ -6,7 +6,7 @@
 
 **What.** One public note after reading the STP-KAS GitHub, rechecking live endpoints, and running the four Cursor starters (deploy, database, plan, debug) against that desk — not against a new app.
 
-**Why.** The account already has a front door ([kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)), a pin encyclopedia ([kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file)), and a private freeze note ([tn10-indexer-stall-2026-09](https://github.com/STP-KAS/tn10-indexer-stall-2026-09)). Those files disagree with each other on dates, counts, and node pins. A stranger landing today cannot tell which sentence is the board.
+**Why.** The account already has a front door ([kaspa-dapps](https://github.com/STP-KAS/kaspa-dapps)), a pin encyclopedia ([kaspa-master-file](https://github.com/STP-KAS/kaspa-master-file)), and a private incident note. Those files disagree with each other on dates, counts, and node pins. A stranger landing today cannot tell which sentence is the board.
 
 **This repo.** New. Named at will. Existing STP-KAS repositories were **not** edited. No issue, pull request, or comment was posted anywhere. One public GitHub only.
 
@@ -22,7 +22,7 @@ Checked **29 Sep 2026**, about **11:14Z** (13:14 CEST), from the Windows desk. E
 
 | Step | What | Why | Source |
 | --- | --- | --- | --- |
-| Absorb GitHub | Listed STP-KAS with `gh` as **STP-KAS**. 74 public, 7 private. Read profile README, kaspa-dapps (README, PLAN, SOURCES, RAILS), kaspa-master-file (README Now, START-HERE, STP-REPOS, TN10-FIELD-2026-09-29), tn10-indexer-stall README, tn10-vprogs-stress-findings README, declared-ply README+VISION, sixpack.wtf README, groks-wallet README. | The desk law is “open the link.” Overlapping GitHubs are the product the desk keeps shipping. | `gh api user`, `gh repo list`, file contents via GitHub API |
+| Absorb GitHub | Listed STP-KAS with `gh` as **STP-KAS**. 74 public, 7 private. Read profile README, kaspa-dapps (README, PLAN, SOURCES, RAILS), kaspa-master-file (README Now, START-HERE, STP-REPOS, TN10-FIELD-2026-09-29), a private incident README, tn10-vprogs-stress-findings README, declared-ply README+VISION, sixpack.wtf README, groks-wallet README. | The desk law is “open the link.” Overlapping GitHubs are the product the desk keeps shipping. | `gh api user`, `gh repo list`, file contents via GitHub API |
 | Live REST | Cache-bust and bare `/info/health` on api-tn10. `/info/blockdag` on TN10 and mainnet. coinsupply, blockreward. | Front-door numbers are 15 Sep. Encyclopedia numbers are 27–29 Sep. They cannot both be “now.” | This fetch, 11:14Z |
 | Live sites | sixpack.wtf HTTP 200. GitHub Pages freeze lab HTTP 200. | “Deploy my prototype” already has a shareable link. The gap is truth, not hosting. | https://sixpack.wtf/ · https://stp-kas.github.io/grok-heavy-showcase/ |
 | Pin check | rusty-kaspa latest **v2.1.0**. SilverScript latest **v1.0.0**. Argent tags **0**. KCC-0 file **Final**. vprogs #165 **open, not draft, not merged**, head `b5c48193`. | PLAN.md and kaspa-dapps constitution still say node **v2.0.1**. Findings README still calls #165 a draft at `bcebf59`. | GitHub API, this pass |
@@ -56,7 +56,7 @@ Do not quote the 15 Sep table in kaspa-dapps as current.
 
 ### Database review (api-tn10)
 
-Same freeze the private stall note already named. Rechecked; still true.
+Same freeze the private incident note already described. Rechecked; still true.
 
 | Probe | Result | Meaning |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Risky access rules, for anyone still wiring a bot to this host:
 4. The rest-server tag **v2.3.0** is not kaspad. Mainnet openapi is **v2.4.1**. Do not weld those strings to rusty-kaspa **v2.1.0**.
 5. Uniqueness for KNS-class names is still indexer FCFS. An indexer that stalls is a uniqueness stall, not consensus.
 
-Cause of the stall: **unproven**. Time correlation with the 25 Sep storm (~6k processed-body TPS on the desk node at 19:55Z) is in the private stall note. Time correlation is not causation. This desk does not have indexer logs.
+Cause of the stall: **unproven**. Time correlation with the 25 Sep storm (~6k processed-body TPS on the desk node at 19:55Z) is in the private incident note. Time correlation is not causation. This desk does not have indexer logs.
 
 ### Deploy review
 
@@ -125,9 +125,9 @@ Disagreements **inside STP-KAS files**, or between those files and a live fetch.
 | Where | Older sentence | What holds today |
 | --- | --- | --- |
 | Node pin | kaspa-dapps constitution §7 and PLAN.md “Now”: rusty-kaspa **v2.0.1**. groks-wallet 21 Sep row in STP-REPOS: v2.0.1. windows-p2p-node-guide row: v2.0.1. | Master file Now and groks-wallet Windows desk section: **v2.1.0**. GitHub latest release: **v2.1.0**. Guest tic-tac-toe still pins rusty-kaspa `eb0a856`. |
-| Repo census | SOURCES.md: 42 public. STP-REPOS.md (21 Sep): 54 owned, 52 public, 2 private. Master file 26 Sep: 76 owned, 73 public, 3 private. | This pass: **74 public, 7 private**. Private now includes tn10-indexer-stall, blue-line-tictactoe, tn10-stress-tests, grok-desk-tn10, plus the older journals. |
+| Repo census | SOURCES.md: 42 public. STP-REPOS.md (21 Sep): 54 owned, 52 public, 2 private. Master file 26 Sep: 76 owned, 73 public, 3 private. | This pass: **74 public, 7 private**. Private now includes an additional incident repo, blue-line-tictactoe, tn10-stress-tests, grok-desk-tn10, plus the older journals. |
 | Health 200 | Anyone quoting bare api-tn10 health as synced | STALE body, kaspad 2.0.1, blueScore 568825293, freeze stamp 19:45:05Z. Real freeze stamp is **19:55:38Z** on a cache miss. |
-| Two freeze times | Other bots’ 19:45:05Z vs 19:55:38Z | Explained in the private stall note. Rechecked. Same split. |
+| Two freeze times | Other bots’ 19:45:05Z vs 19:55:38Z | Explained in the incident note. Rechecked. Same split. |
 | vprogs #165 | tn10-vprogs-stress-findings (26 Sep): draft, head `bcebf59` | 29 Sep: **not draft**, head **`b5c48193`**, still open, still unmerged |
 | vprogs branch names | tictactoe README at `098be674`: check out `fix/settlement-watch-wedge` | Cargo.lock pins `fix/settlement-watch-state-neutral` `07d486dd`. declared-ply already tables this. |
 | `release-candidate` | Sounds like a release | Branch tip, not a GitHub release. vprogs has **no** release. Master still `f9b84a8` (28 Jul). |
@@ -145,7 +145,7 @@ Disagreements **inside STP-KAS files**, or between those files and a live fetch.
 | LLM forum | “Do not post reports. The clock does not run.” | This repo is a report. It is a **new** public GitHub, not a post on that forum, and not a comment on existing repos. |
 | silverscript vs rusty v2.1.0 | KagenC / agenc pin `a41a333b` on purpose (#256) | Python SDK crate pins silverscript `3ed9733` and rusty `a41a333b`, not v2.1.0. An SDK release is not a compiler fix. |
 | Hosted tic-tac-toe vs declared-ply | Same two cells | Guest `drain_pending` can open the next round. Batch lands one ply; extra cell is `Retry`. The interesting bug is that split. |
-| Private vs public TN10 | grok-bot-vprogs private; public round 1–8 copies; stress-findings public; indexer stall private | The stall note is the one that should be public if the desk wants strangers to stop trusting api-tn10. It is still private. This README carries the live recheck only. |
+| Private vs public TN10 | grok-bot-vprogs private; public round 1–8 copies; stress-findings public; incident note private | The incident note is the one that should be public if the desk wants strangers to stop trusting api-tn10. It is still private. This README carries the live recheck only. |
 
 Do not weld (copied from the encyclopedia, still true): Argent tag, KCC-20 Final, DAGKnight shipped, vProgs product, tictactoe = vProgs live, x402 mainnet, `release-candidate` = a release, REST v2.3.0 = a node release, api-tn10 health 200 = a synced indexer, a research.kas.pa thread = consensus.
 
@@ -197,7 +197,7 @@ Desk, read not cloned into this repo:
 - https://github.com/STP-KAS/kaspa-dapps
 - https://github.com/STP-KAS/kaspa-master-file
 - https://github.com/STP-KAS/kaspa-master-file/blob/main/TN10-FIELD-2026-09-29.md
-- https://github.com/STP-KAS/tn10-indexer-stall-2026-09 (private; not modified)
+- A private incident repo (not modified)
 - https://github.com/STP-KAS/tn10-vprogs-stress-findings
 - https://github.com/STP-KAS/declared-ply
 - https://github.com/STP-KAS/sixpack.wtf
